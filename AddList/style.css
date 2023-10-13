@@ -1,0 +1,109 @@
+:root{
+    --cor01: rgb(241,101,96);
+    --cor02: rgb(55,15,63);
+}
+
+body{
+    background-image: linear-gradient(to right, var(--cor01), var(--cor02));
+    text-align: center;
+}
+
+#intro-text{
+    color: white;
+    font-size: 1.6em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+#task{
+    margin-top: 35px;
+}
+div#text{
+    height: 50px;
+    background-color: rgb(245, 245, 245);
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid black;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.404);
+    padding: 0;
+}
+
+#plus{
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    background-color: rgb(245, 245, 245);
+    width: 55px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        background-color: rgba(194, 194, 194, 0.473)
+    }
+}
+
+#plus i{
+    color: var(--cor02);
+}
+#txtbox{
+    margin-right: auto;
+    width: 100%;
+    border: none;
+    padding: 2px;
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9em;
+    color: var(--cor02);
+    text-shadow: 1px 1px 3px rgba(55, 15, 63, 0.205);
+}
+
+/* Setting the TextBox config */
+#to-do{
+    height: 50px;
+    width: 500px;
+    box-shadow: 2px 2px 3px black;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#done{
+    width: 30px;
+    height: 100%;
+    padding: 0px 3px 0px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+        background-color: rgb(7, 211, 7);
+    }
+}
+
+#close{
+    width: 30px;
+    height: 100%;
+    padding: 0px 3px 0px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+        background-color: rgb(241, 15, 15);
+    }
+}
+
+/* Answer Paragraph */
+#to-do p{
+    font-weight: 600;
+    margin-right: auto;
+    padding-left: 10px;
+}
