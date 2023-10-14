@@ -50,6 +50,8 @@ btn.addEventListener("click", function(){
     //Add item at page
     document.body.appendChild(NewTask)
 
+      
+
     //Add Remove Event
     const removeBtn = NewTask.querySelector(".removeBtn").addEventListener("click", function(){ removeTask(this)})
 
